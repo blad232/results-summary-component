@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./CSS/styles.css" />
+		<title>Frontend Mentor | Results summary component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Results summary component</title>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+	<body>
+		<main class="container">
+			<div class="card">
+				<div class="left-card">
+					<h2 class="left-card__heading --mod-media --mod-media-top">Your Result</h2>
+					<div class="left-card__circle">
+						<h1 class="left-card__heading --mod-size-4 --mod-color --mod-media-5">76</h1>
+						<h2 class="left-card__heading --margin-top --mod-media-2">of 100</h2>
+					</div>
+					<h2 class="left-card__heading --mod-size-2 --mod-color --mod-media-3">Great</h2>
+					<p class="left-card__paragragh --margin-top">
+						You scored higher than 65% of the people who have taken these tests.
+					</p>
+				</div>
+				<div class="right-card">
+					<h2 class="right-card__summary --mod-size-2">Summary</h2>
 
-<body>
-  <main class="container">
-    <div class="card">
-      <div class="left__card">
-        <h3>Your Result</h3>
-        <div class="circle">
-          <h1 class="Heading">76</h1>
-          <h4 class="score">of 100</h4>
-        </div>
-        <h3>Great</h3>
-        <p class="paragragh">You scored higher than 65% of the people who have taken these tests.</p>
-      </div>
-      <div class="right__card">
-        <h3>Summary</h3>
+					<button id="right-card__boton">Continue</button>
+				</div>
+			</div>
 
-        <button id="boton">Continue</button>
-      </div>
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+				<a href="https://www.frontendmentor.io/profile/blad232">Bladimir</a>.
+			</div>
+		</main>
 
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/blad232">Bladimir</a>.
-  </div>
-  <script src="index.js"></script>
-</body>
-
+		<script src="./SRC/index.js"></script>
+	</body>
 </html>

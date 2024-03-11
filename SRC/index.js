@@ -1,6 +1,6 @@
 let rightCard = document.getElementsByClassName("right__card");
-let boton = document.getElementById("boton");
-fetch("./data.json")
+let boton = document.getElementById("right-card__boton");
+fetch("./SRC/data.json")
     .then(res => {
         return res.json();
     })
@@ -23,8 +23,9 @@ function crearElem(i) {
 }
 function crearElem2(e, num) {
     let div = document.createElement("div");
-    div.setAttribute("class", "row");
-    div.innerHTML += `<p class="text${num}"><img class="images" id="imagen-${num}" src="${e.icon}" alt="icon">${e.category}</p> <p class="text">${e.score} / 100</p>`;
+    div.setAttribute("class", "right-card__row");
+    div.setAttribute("id", `right-card__row-${num}`)
+    div.innerHTML += `<p class="right-card__text" id="icon__text${num}"><img class="right-card__icons" id="imagen-${num}" src="${e.icon}" alt="icon">${e.category}</p> <p class="right-card__text-score"><span class="span-score">${e.score}</span>   /   100</p>`;
     // rightCard[0].appendChild(div);
     boton.insertAdjacentElement("beforebegin", div);
 
